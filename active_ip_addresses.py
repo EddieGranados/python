@@ -51,6 +51,7 @@ clean_ips = re.sub(r"[\]]", "\n", clean_ips)
 
 
 # writing IPs to new file
-outfile = open("outfile.txt",'w')
-for l in clean_ips:
-    outfile.write(l)
+with open("outfile.txt",'w') as outfile:
+    for l in clean_ips:
+        outfile.write(l)
+    outfile.close()
