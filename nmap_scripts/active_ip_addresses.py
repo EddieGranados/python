@@ -4,7 +4,7 @@ import os
 
 
 
-# nmap command to perform a Ping Scan - disable port scan 
+# nmap command to perform a Ping Scan 
 os.system('nmap -sn 192.168.1.* | cat > ping_scan.txt')
 
 
